@@ -1,0 +1,56 @@
+.my-header {
+
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.25rem;
+    padding-block: 1.5rem ;
+    max-width: 1366px;
+    margin-inline: auto
+    
+
+}
+.my-header > .my-logo {
+
+    
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-ul {
+
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-a {
+
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.my-header__icon{
+
+    width: 1.75rem;
+    height: 1.75rem;
+
+}
+
+.my-header__icon-btn {
+
+    display: none;
+}
+
+
+@media (width < 760px) {
+
+    .my-header__nav {
+        display: none;
+    }
+    .my-header__icon-btn {
+
+        display: block;
+    }
+    
+}
