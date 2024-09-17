@@ -1,0 +1,99 @@
+.my-hero {
+
+    display: flex;
+    padding-inline: 1.25rem;
+    padding-top: 6rem ;
+    overflow: hidden;
+  
+}
+
+.my-hero__left {
+
+    
+    flex: 1;
+}
+
+.my-hero__right {
+
+    flex: 1;
+   
+}
+
+.my-hero__up-text {
+
+    color: #2eb1a3;
+    text-transform: uppercase;
+    font-weight: 600;
+   
+}
+
+.my-hero__title {
+
+    line-height: 1.1;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: -0.05em;
+    margin-top: 0.75rem;
+}
+
+.my-hero__description {
+
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-weight: 300;
+    line-height: calc(1rem + 0.5rem);
+    margin-block: 1.5rem;
+    max-width: 55ch;
+}
+
+.my-hero__btn {
+
+    font-size: 1rem;
+    background: linear-gradient(to right , #E8546B , #ac3cf6 );
+    padding: 0.5em 2rem;
+    border-radius: 6px;
+    color: #000;
+}
+
+/**.my-hero__right {
+
+
+}
+*/
+
+
+.my-hero__img {
+
+  
+    max-width: 600px;
+    transform: rotate(15deg);
+    
+}
+
+@media (width < 1024) {
+
+    .my-hero {
+
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .my-hero__title {
+        max-width: 20ch;
+    }
+
+    .my-hero__img {
+        width: 90%;
+        max-width: 400px;
+        margin-inline: auto;
+    }
+}
+
+@media (width < 760px) {
+
+    .my-hero__title {
+
+        font-size: 2.5rem;
+
+    }
+}
